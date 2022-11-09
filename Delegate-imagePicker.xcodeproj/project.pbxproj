@@ -13,6 +13,7 @@
 		646A5931291BF5130065B1D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646A592F291BF5130065B1D8 /* Main.storyboard */; };
 		646A5933291BF5150065B1D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646A5932291BF5150065B1D8 /* Assets.xcassets */; };
 		646A5936291BF5150065B1D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646A5934291BF5150065B1D8 /* LaunchScreen.storyboard */; };
+		646A5944291C1AB90065B1D8 /* ViewControllerDelegateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A5943291C1AB90065B1D8 /* ViewControllerDelegateTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		646A5932291BF5150065B1D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		646A5935291BF5150065B1D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646A5937291BF5150065B1D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		646A5943291C1AB90065B1D8 /* ViewControllerDelegateTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegateTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				646A5929291BF5130065B1D8 /* AppDelegate.swift */,
 				646A592B291BF5130065B1D8 /* SceneDelegate.swift */,
 				646A592D291BF5130065B1D8 /* ViewController.swift */,
+				646A5943291C1AB90065B1D8 /* ViewControllerDelegateTool.swift */,
 				646A592F291BF5130065B1D8 /* Main.storyboard */,
 				646A5932291BF5150065B1D8 /* Assets.xcassets */,
 				646A5934291BF5150065B1D8 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				646A592E291BF5130065B1D8 /* ViewController.swift in Sources */,
 				646A592A291BF5130065B1D8 /* AppDelegate.swift in Sources */,
+				646A5944291C1AB90065B1D8 /* ViewControllerDelegateTool.swift in Sources */,
 				646A592C291BF5130065B1D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,15 +291,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2CCLTDMVL;
 				INFOPLIST_FILE = "Delegate-imagePicker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smtech.Delegate-imagePicker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,15 +311,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2CCLTDMVL;
 				INFOPLIST_FILE = "Delegate-imagePicker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smtech.Delegate-imagePicker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
